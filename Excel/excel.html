@@ -1,0 +1,369 @@
+<!--starter-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "excel.css"> <!--css est la référence de code pour le front-->
+    <title>Excel</title> <!--choix du titre-->
+
+<!--Icon fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+<script src="excel.js"></script> 
+
+</head>
+
+
+<body>
+    
+    <!-------------------HEAD------------------>
+<header class="header">
+    <a href="#" class="logo">Bellinna</a>
+    <p>The Other Side of Manga : Hidden Treasures<p>
+    <button class="home">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">Home</a>
+    </button>
+
+</header>
+
+    <!-------------------SIDEBAR------------------>
+
+<div class="sidebar">
+    <nav class="nav">
+        <a href="#objective"><div class="element"><img src="icon/Objetive.png" alt=""></div></a>
+        <a href="#source"><div class="element"><img src="icon/source.png" alt=""></div></a>
+        <a href="#prep"><div class="element"><img src="icon/prep.png" alt=""></a></div>
+        <a href="#chart"><div class="element"><img src="icon/chart.png" alt=""></a></div>
+        <a href="#interp"><div class="element"><img src="icon/interpretation.png" alt=""></div></a>
+        <a href="#summary"><div class="element"><img src="icon/summary.png" alt=""></a></div>
+        <a href="#recom"><div class="element"><img src="icon/recommendation.png" alt=""></a></div>
+        <a href="#learning"><div class="element"><img src="icon/learning.png" alt=""></a></div>
+    </nav>
+</div>
+
+    <!-------------------intro------------------>
+    <section class="intro">
+        <div class="container">
+            <div class="text">
+                <p id="intro1">  The manga industry has experienced significant growth over the years,
+                with new titles being published and readership expanding globally. As 
+                someone passionate about both data analysis and manga, I wanted to explore 
+                how data can reveal key insights about this industry.
+                </p>
+                <p id="intro2">The manga industry has seen significant growth over the years, with new titles 
+                captivating audiences worldwide. However, many of the most well-known and 
+                long-running mangas are reaching their conclusions, such as One Piece and 
+                Attack on Titan. 
+                </p>
+                <p id="intro3">
+                The goal is to identify potential future leaders in the industry based 
+                on historical patterns and current data. 
+                </p>
+            </div>
+            <img src="manga.png" alt="">
+        </div>
+        <div class="down">
+            <button class="Btn">
+                <svg class="svgIcon" viewBox="0 0 496 512" height="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                <span class="text">Github</span>
+              </button>
+              <div class="card">
+                <span class="title">Skill</span>
+                <div class="card__tags">
+                  <ul class="tag">
+                    <li class="tag__name">Data Analysis</li>
+                    <li class="tag__name">Data Visualization</li>
+                    <li class="tag__name">Data Cleaning</li>
+                    <li class="tag__name">Excel</li>
+                    <li class="tag__name">Power Query</li> 
+                  </ul>
+                </div>
+              </div>
+        
+        </div>
+        <div class="lang">
+            <button onclick="changeLanguage('fr')">Français</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        
+    </section>
+
+    <!-------------------OBJECTIVE------------------>
+    <section class="objectif" id="objective">
+        <h1 id="prom">What factors influence the success of a manga?</h1>
+        <div class="all-objec">
+            <div class="text-objec">
+                <h2 id="objh">Ojective</h2>
+                <p id="obj1">
+                    The primary objective of this project was to 
+                    use data to uncover trends and insights that 
+                    could help predict which mangas might become 
+                    the next big success stories.
+                </p>
+                <p id="obj2">
+                    Specifically, I focused on understanding how manga 
+                    ratings have changed over time, identifying the most
+                    popular genres, and analyzing the correlation between
+                    different categories to find patterns in manga content.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------SOURCE------------------>
+    <section class="source" id="source">
+        <div class="all-source">
+            <div class="text-source">
+                <h2 id="dataset">The dataset</h2>
+                <p id="source1">
+                    The data used for this project was sourced
+                    from Kaggle, a well-known platform for datasets
+                    and data science competitions.
+                </p>
+                <p id="source2">
+                    The dataset consists of 70 939 manga, their synospis,
+                    each accompanied by a rating on a 5-point scale, the
+                    year of release, and associated categories. The dataset 
+                    provides a comprehensive view of both quantitative aspects
+                    (ratings and release years) and qualitative characteristics 
+                    (categories).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------PREP------------------>
+    <section class="prep" id="prep">
+        <div class="all-prep">
+            <div class="text-prep">
+                <h2 id="dataprep">Data preparation</h2>
+                <p id="prep1">
+                    There were many mangas missing key information such
+                    as their release date or rating. So, I began by cleaning
+                    the data, removing mangas that had no ratings or categories.
+                    For the remaining mangas without a release year, if the information
+                    was not easily accessible, I removed them as well. Since the number
+                    was small, I manually added the missing years. I also removed any
+                    duplicates that existed in the dataset. As a result, the dataset
+                    was reduced from 70,393 mangas to 27,028.
+                </p>
+                <p id="prep2">
+                    Categories that are almost identical were grouped into a single
+                    category (e.g., BL = Yaoi).
+                </p>
+            </div>
+
+            <div class="details">
+                <div class="left">
+                    <img src ="1.1.png">
+                    <p id="left">I began my analysis by creating a new column to categorize mangas
+                         into specific year ranges (e.g 2011-2020 or Before 2000) using 
+                         the IF formula in Excel. </p>
+                </div>
+
+                <div class="right">
+                    <img src ="2.png">
+                    <p id="right1">To determine the number of mangas within each year range,
+                    I utilized the COUNTA formula. 
+                    </p>
+                    <p id="right2">Additionally, I employed the MAX and MIN formulas to identify
+                    the oldest and most recent publication years in the dataset.</p>
+                </div>
+            </div>
+
+            <div class="pivottable">
+                    <div class="text-pivot">
+                        <p id="pivot1">
+                            I created pivot tables to analyze the data in several ways. I 
+                            compared average ratings across each year, which allowed me to 
+                            determine the overall average rating.
+                        </p>
+                        <p id="pivot2">
+                            I also analyzed average ratings by category, as well as average 
+                            ratings within specific year ranges.
+                        </p>
+                        <p id="pivot3">
+                            Additionally, I created a pivot table to show the number of mangas per year range.
+                            To enhance interactivity, I set up charts linked to a segment, which enabled users 
+                            to control the year range across all visualizations simultaneously.
+                        </p>
+                    </div>
+                    <div class="image-pivot">
+                        <img src="345.jpg">
+                    </div>
+            </div>
+                    
+                    
+
+            <div class="categories">
+                <div class="text">
+                    <p id="cat1">
+                        Since manga categories were originally listed in a single cell 
+                        for each manga, I used Power Query to transform this categorical 
+                        data into individual rows, ensuring that each category was represented 
+                        separately. </p>
+                    <p id="cat2">    This transformation allowed me to generate additional pivot 
+                        tables analyzing the relationship between categories and manga counts, 
+                        as well as categories and their respective ratings.
+                    </p>
+                </div>
+                    <img src="6.png">
+            </div>
+
+            <div class="correlation">
+                    <p id="corr">
+                        I constructed a correlation matrix to understand 
+                        the relationships between categories and ratings. 
+                        I sampled 1086 mangas and added binary columns for 
+                        the top 14 categories. Using the CORREL function, I 
+                        calculated the correlation coefficients and applied 
+                        conditional formatting to visually represent these correlations, 
+                        making it easier to interpret the strength and direction of the 
+                        relationships between categories.
+                    </p>
+                    <div class="img">
+                        <img src="7.png">
+                    </div>
+                    
+            </div>
+
+            <div class="segment">
+                    <img src="8.png">
+                    <p id="seg">
+                        The dashboard features segments that allow users 
+                        to focus on specific year ranges or categories. This 
+                        functionality enables users to isolate particular time 
+                        periods or genres, facilitating a more detailed analysis 
+                        of trends and patterns
+                    </p>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-------------------CHART------------------>
+    <section class="chart" id="chart">
+        <h2 id="chartkey">Charts and Key Insights</h2>
+        <p id="chart1">
+            The average manga ratings are quite unstable before
+            1980. However, from 1980 until 2022, we see a clear
+            upward trend. The trendline suggests that this increase
+            could continue in the future.
+        </p>
+        <p id="chart2">
+            In the dataset, the majority of manga are concentrated in 
+            the year ranges between 2011-2020 and 2000-2010. Additionally, 
+            the average release year for manga in these ranges is 2006 and 
+            2016, respectively.
+        </p>
+        <img src="9.png">
+        <p id="chart3">
+            The most frequently used categories, which also have the highest-rated 
+            manga (with average ratings between 4.6 and 4.7), include Romance, Yaoi—where 
+            half of the manga are categorized—Drama, Comedy, School, Fantasy, Full Color, 
+            Webtoons, Action, and Manhwa. The latter categories represent about a quarter 
+            of the dataset. It is worth noting that very few manga have ratings above 4.6 out of 5.
+        </p>
+        <img src="10.png">
+        <p id="chart4">The correlation table reveals certain categories that appear frequently together and have strong 
+        correlations, such as Webtoons and Full Color, with a correlation coefficient of 0.897. On the 
+        other hand, some combinations, like Romance and Action, show very low correlation, with a coefficient 
+        of -0.298. Most categories, however, tend to be relatively independent of one another.</p>
+        <img src="11.png">
+    </section>
+
+    <!-------------------INTERP------------------>
+    <section class="interp" id="interp">
+        <h2 id="int"> Interpretation </h2>
+        <p id="interp1">
+            The instability of average manga ratings before 1980 
+            likely reflects the smaller number of mangas released during 
+            that period, making it difficult to draw consistent conclusions. 
+            The upward trend in ratings from 1980 onwards suggests either an 
+            improvement in manga quality over time or changes in audience 
+            preferences that have resulted in higher ratings. The trendline further 
+            suggests that, if these patterns continue, we could expect average 
+            ratings to keep rising in the future. </p>
+        <p id="interp2">The concentration of manga releases in the 2000-2020 range indicates a
+            period of rapid growth in the industry, possibly due to the global 
+            popularity of manga and the rise of digital platforms. The average 
+            release years of 2006 and 2016 highlight key periods of manga production, 
+            aligning with significant developments in publishing and distribution. </p>
+        <p id="interp3">Categories such as Romance, Yaoi, Drama, and others not only dominate the 
+            dataset in terms of the number of mangas but also show a tendency to 
+            have higher ratings. This suggests that these genres may appeal more 
+            to the audience or attract better-quality works. Conversely, the rarity of mangas 
+            with ratings above 4.6 indicates that 
+            exceptional ratings are hard to achieve, which may reflect stricter 
+            reader standards or the challenges of producing universally acclaimed works.</p>
+        <p id="interp4">
+            The strong correlations, particularly between Webtoons and Full Color, Full Color 
+            and Manhwa, Manhwa and Webtoons, as well as Fantasy and Adventure, suggest that these 
+            categories frequently co-occur in the dataset. This likely reflects the specific style 
+            and format associated with these categories. For instance, many Webtoons are both in 
+            full color and originate from South Korea (Manhwa), while Fantasy and Adventure are 
+            genres that often share similar narrative elements, making their frequent pairing 
+            unsurprising. The general independence of most other categories indicates that manga 
+            genres tend to stand alone, catering to distinct audience preferences.
+        </p>
+
+    </section>
+
+    <!-------------------SUMMARY------------------>
+    <section class="summary" id="summary">
+        <h2 id="summa"> Summary of discoveries </h2>
+        <p id="sum1">
+            In summary, the analysis of manga data reveals several key trends. 
+            First, the instability in ratings prior to 1980 contrasts sharply with 
+            the steady increase in ratings from 1980 onward, suggesting a shift in 
+            either manga quality or audience preferences. The concentration of manga 
+            releases between 2000 and 2020 highlights a boom in the industry, driven 
+            in part by digital platforms. Popular categories like Romance, Yaoi, Drama, 
+            and Comedy not only dominate in numbers but also tend to have higher ratings, 
+            indicating a strong audience appeal. However, very few mangas surpass a rating 
+            of 4.6, reflecting the challenge of achieving exceptional ratings. </p>
+        <p id="sum2">The correlation analysis reveals strong connections between certain categories, 
+            especially Webtoons, Full Color, Manhwa, Fantasy, and Adventure, which frequently 
+            appear together. This suggests that certain formats and genres naturally complement 
+            each other, driving higher reader engagement. </p>
+    </section>
+
+    <!-------------------RECOM------------------>
+    <section class="recom" id="recom">
+        <h2 id="re"> Recommendation </h2>
+        <p id="recomm">
+            Based on these findings, future analysis could explore the influence of individual 
+            authors, publishers, or studios on manga success. Additionally, investigating the 
+            role of digital distribution and international readership could provide deeper 
+            insights into the global expansion of the industry. Lastly, conducting sentiment 
+            analysis on user reviews might offer more nuanced explanations behind the ratings, 
+            helping to identify specific factors that drive higher reader satisfaction. </p>
+    </section>
+
+    <!-------------------LEARNING------------------>
+    <section class="learning" id="learning">
+        <h2 id="bellinna"> Personal Learnings </h2>
+        <p id="learn1">
+            This project has deepened my understanding of data analysis and its practical application 
+            in exploring trends within a specific industry like manga. I have enhanced my skills 
+            in data cleaning and transformation, particularly using Power Query to handle complex 
+            categorical data. </p>
+        <p id="learn2">Through this project, I have also improved my ability to visualize data effectively, 
+            making insights more accessible and understandable through clear charts and tables. 
+            I learned how to set up and utilize segments to focus on specific years or categories, 
+            which greatly enhanced my analytical capabilities. Understanding how to apply these 
+            segments allowed me to dissect data more effectively, providing clearer insights into 
+            trends and patterns within targeted subsets of the data. </p>
+    </section>
+
+
+
+
+</body>
+
+
+</html>
