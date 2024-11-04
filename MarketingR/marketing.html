@@ -1,0 +1,377 @@
+<!--starter-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "marketing.css"> <!--css est la référence de code pour le front-->
+    <title>Statistical modeling and correlations in R</title> <!--choix du titre-->
+
+<!--Icon fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+    <!-------------------HEAD------------------>
+<header class="header">
+    <a href="#" class="logo">Bellinna</a>
+    <p>Boosting marketing campaigns with modeling<p>
+    <button class="home">
+        <a href="/../index.html" style="text-decoration: none; color: inherit;">Home</a>
+    </button>
+
+</header>
+
+    <!-------------------SIDEBAR------------------>
+
+<div class="sidebar">
+    <nav class="nav">
+        <a href="#objective"><div class="element"><img src="icon/Objetive.png" alt=""></div></a>
+        <a href="#source"><div class="element"><img src="icon/source.png" alt=""></div></a>
+        <a href="#prep"><div class="element"><img src="icon/prep.png" alt=""></a></div>
+        <a href="#chart"><div class="element"><img src="icon/chart.png" alt=""></a></div>
+        <a href="#interp"><div class="element"><img src="icon/interpretation.png" alt=""></div></a>
+        <a href="#summary"><div class="element"><img src="icon/summary.png" alt=""></a></div>
+        <a href="#recom"><div class="element"><img src="icon/recommendation.png" alt=""></a></div>
+        <a href="#learning"><div class="element"><img src="icon/learning.png" alt=""></a></div>
+    </nav>
+</div>
+
+    <!-------------------intro------------------>
+    <section class="intro">
+        <div class="container">
+            <div class="text">
+                <p id="intro1">The marketing landscape is rapidly evolving as businesses 
+                    compete for consumer attention in an increasingly saturated market.
+                </p>
+                <p id="intro2">Traditional methods of campaign planning are no longer enough; 
+                    marketers need to make informed decisions based on concrete insights about 
+                    consumer behavior, preferences, and trends.
+                </p>
+                <p id="intro3">
+                    In this environment, the ability to analyze historical data and predict future 
+                    outcomes has become a vital competitive advantage. By leveraging data analytics, 
+                    companies can better allocate resources, personalize their messaging, and optimize 
+                    the timing and channels of their campaigns.  
+                </p>
+            </div>
+            <img src="pic/1.png" alt="">
+        </div>
+        <div class="down">
+            <button class="Btn">
+                <svg class="svgIcon" viewBox="0 0 496 512" height="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                <span class="text">Github</span>
+              </button>
+              <div class="card">
+                <span class="title">Skill</span>
+                <div class="card__tags">
+                  <ul class="tag">
+                    <li class="tag__name">R</li>
+                    <li class="tag__name">Data Visualization</li>
+                    <li class="tag__name">Predictive modeling</li>
+                    <li class="tag__name">Descriptive statistics</li>
+                    <li class="tag__name">Model evaluation</li> 
+                  </ul>
+                </div>
+              </div>
+        
+        </div>
+        <div class="lang">
+            <button onclick="changeLanguage('fr')">Français</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        
+    </section>
+
+
+    <!-------------------OBJECTIVE------------------>
+    <section class="objectif" id="objective">
+        <h1 id="problematic">How can we optimize future marketing campaigns to maximize customer engagement by leveraging predictive modeling ?</h1>
+        <div class="all-objec">
+            <div class="text-objec">
+                <h2 id="obj-h2">Ojective</h2>
+                <p id="obj1">
+                    The objective was to harness historical data from XYZ 
+                    Company—including customer profiles, campaign outcomes, 
+                    and channel performances—to build a model that forecasts 
+                    the success of future campaigns. This model aims to provide 
+                    actionable insights for refining marketing strategies and 
+                    enhancing overall campaign effectiveness.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------SOURCE------------------>
+    <section class="source" id="source">
+        <div class="all-source">
+            <div class="text-source">
+                <h2 id="dataset-h2">The dataset</h2>
+                <p id="source1">
+                    The data used for this project was sourced
+                    from Kaggle, a well-known platform for datasets
+                    and data science competitions.
+                </p>
+                <p id="source2">
+                    The dataset consists of 2,205 observations and includes 
+                    39 quantitative variables. Among these variables are key 
+                    metrics such as age, income, whether the individual responded 
+                    positively to campaign N, and the amount spent on certain purchases.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------SOME INFO------------------>
+    <section class="someinfo" id="source">
+        <div class="all-info">
+            <h2 id="someinfo-h2">Some key information</h2>
+            <div class="text-info">
+                <p id="info">
+                The revenue range among participants varies from €1,730 to €113,734 
+                per year. At least half of the participants have no dependent children. 
+                The age of clients ranges from 24 to 80 years, with an average age of approximately 51 years.
+                </p>
+                <img src="pic/2.png">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-------------------PREP------------------>
+    <section class="prep" id="prep">
+        <div class="all-prep">
+            <div class="text-prep">
+                <h2 id="dataprep-h2">Data preparation for a new model</h2>
+                <p id="prep1">
+                    In our data preparation phase, we construct a model using the total 
+                    number of campaign acceptances as the response variable. To enhance 
+                    the accuracy and relevance of our linear regression model, we employ 
+                    the regsubsets function. This function is instrumental in selecting 
+                    the most pertinent variables by evaluating all possible subsets of predictors.
+                </p>
+                <p id="prep2">
+                    By focusing on the most significant variables, we refine our model to better predict 
+                    the likelihood of campaign success, ensuring a more robust and insightful analysis.
+                </p>
+                <div class="pic">
+                    <img src="pic/3.png">
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="problem">
+                    <p id="problem1">The model we created has linear dependencies between certain variables. 
+                        The issue arises when several predictive variables are highly correlated, making 
+                        it difficult for the regression algorithm to distinguish their individual impact 
+                        on the target variable.  </p>
+                    <img src ="pic/4.png"> 
+                </div>
+
+                <div class="corr">
+                    <div class="leftside">
+                        <p id="corr1">This multicollinearity can lead to unstable coefficient estimates, reducing 
+                            the model's interpretability. Therefore, we will check for correlations to identify and 
+                            address any strongly correlated variables before proceeding with model fitting. 
+                        </p>
+                        <img src ="pic/5.png">
+                    </div>
+                    <div class="rightside">
+                        <p id="corr2"> Upon examining the provided correlation matrix, several pairs of variables exhibit strong 
+                            correlations (in absolute value). Notably, Income and MntTotal show a correlation of 0.823, 
+                            indicating a substantial relationship between a customer's income and their total spending. 
+                            Similarly, MntWines and MntTotal are highly correlated (corr = 0.9617), as well as MntMeatProducts 
+                            and MntTotal (corr = 0.9435). Other notable pairs include MntFruits and MntTotal (corr = 0.9288), 
+                            MntSweetProducts and MntTotal (corr = 0.9079), and MntFishProducts and MntTotal (corr = 0.8875). 
+                            These strong correlations suggest that total spending is highly influenced by spending across 
+                            various product categories.</p>
+                        <img src = "pic/6.png">
+                    </div>
+                </div>
+
+                <div class="resolution">
+                    <p id="resolcorr1">To prevent model errors, we will omit the following variables: MntWines, MntMeatProducts, MntFruits, 
+                        MntSweetProducts, MntFishProducts, MntRegularProds, AcceptedCmp1, AcceptedCmp2, AcceptedCmp3, AcceptedCmp4, 
+                        and AcceptedCmp5.  </p>
+                        
+                    <p id="resolcorr2">Additionally, certain variables such as Z_CostContact and Z_Revenue do not appear to contribute to the variance 
+                        of other variables. Moreover, we lack sufficient information about their nature and relevance, which suggests 
+                        that they could be removed from the dataset.</p>
+                    <p id="resolcorr3">These variables may introduce multicollinearity or add noise to the model without providing significant predictive power. 
+                        By excluding them, we aim to improve the model's accuracy and interpretability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------A NEW MODEL------------------>
+    <section class="model">
+        <h2 id="newmodel-h2">A ridge linear model</h2>
+        <p id="newmodel1">
+            I use the glmnet function to fit regression models, which helps 
+            regularize the coefficients in order to better handle issues like 
+            multicollinearity. This method reduces the impact of highly correlated 
+            variables while retaining all variables in the model, as some of the 
+            remaining variables still exhibit strong correlations.
+        </p>
+        <p id="newmodel2">
+            We proceed by fitting the Ridge model using glmnet, and this new model 
+            will be referred to as 'best_model'. The next step is to display the 
+            coefficients of each variable, which is crucial for interpreting the model 
+            and understanding the relative importance of each explanatory variable.
+        </p>
+        <img src="pic/7.png">
+        <p id="newmodel3">
+            In our case, for a linear regression, each coefficient will indicate how much the 
+            target variable changes on average for a one-unit change in the explanatory variable, 
+            holding all other factors constant. This means that each coefficient represents the 
+            isolated effect of the corresponding variable on the target, providing insight into 
+            the relationship between the predictors and the outcome of interest.
+        </p>
+        <img src="pic/8.png" class="coeffpng">
+        <p id="newmodel4">
+            In the model, variables with non-zero coefficients are considered to have an impact on 
+            the target variable. A positive coefficient indicates that an increase in the explanatory 
+            variable leads to an increase in the target variable. Conversely, a negative coefficient
+            implies that an increase in the explanatory variable results in a decrease in the target 
+            variable. Variables with zero coefficients can be ignored in the interpretation, as they do 
+            not significantly influence the outcome.
+        </p>
+        <p id="newmodel5">
+            We created a linear model (using the lm function) and then generated a summary of the results. 
+            The R² value is 0.431, indicating that the model explains approximately 43.1% of the total variance 
+            in the dependent variable. This suggests that the model captures a significant portion of the observed 
+            variability. The F-test evaluates the overall significance of the model. </p>
+        <p id="newmodel6">With an F-statistic of 66.01 
+            and a p-value close to zero (p-value : 2.2e-16), this implies that the model as a whole is statistically 
+            significant. In other words, at least one of the independent variables has a significant effect on the dependent variable. 
+            The analysis also reveals notable trends: for each additional teenager in the household, there is a 0.059 decrease in the 
+            likelihood of accepting the marketing campaign.
+        </p>
+        <img src="pic/11.png">
+        <p id="newmodel7">
+            In our model, we found that each promotional purchase is linked to a decrease of 0.0366 in the acceptance rate, while each in-store 
+            purchase results in a reduction of 0.02528. Conversely, customers who accepted the most recent campaign show a significant increase of 
+            0.6566 in the dependent variable. Regarding education, levels such as Second Cycle, Basic, and Graduation are associated with higher 
+            response rates, highlighting the significant influence of education on attitudes related to the dependent variable.
+        </p>
+        <img src="pic/9.png">
+    </section>
+    <!-------------------TEST------------------>
+    <section class="test" id="test">
+        <h2 id="test-h2">Statistical test to data</h2>
+        <div class="text-test">
+            <p id="test1">
+                We will conduct normality (Shapiro-Wilk), heteroscedasticity (Breusch-Pagan), and residual autocorrelation (Durbin-Watson) tests, 
+                with a significance threshold of 0.05 for each.
+            </p>
+            <p id="test2">
+                The Shapiro-Wilk test checks whether the residuals of a regression model follow a normal distribution. The normality of residuals is crucial 
+                for certain regression models, particularly for the validity of significance tests (p-values) and confidence intervals.
+            </p>
+            <p id="test3">
+                The homoscedasticity assumption (constant variance of errors) is a key condition in classical linear regression. If this assumption is violated 
+                (i.e., heteroscedasticity is present), the standard errors of the estimated coefficients may be inaccurate, affecting the reliability of p-values 
+                and confidence intervals. A model with heteroscedasticity can produce less reliable predictions and underestimate the variability of the estimates.
+            </p>
+            <p id="test4">
+                The Durbin-Watson test checks for autocorrelation of residuals, meaning whether the errors (residuals) of a model are correlated with each other. 
+                If residuals are correlated, it indicates that the model has not captured all the structure in the data. Autocorrelation can result in inefficient 
+                coefficient estimates, which impacts the model's predictive power.
+            </p>
+            <p id="test5">
+                For a 5% threshold, we observe that these three tests are passed.
+            </p>
+        </div>
+        <img src="pic/12.png">
+    </section>
+
+    <!-------------------CHART------------------>
+    <section class="chart" id="chart">
+        <h2 id="chart-h2">Charts and Key Insights</h2>
+        <p id="chart1">
+            Without a doubt, the vast majority of customers did not respond 
+            positively to any of the advertising campaigns we conducted. We 
+            should focus on identifying the key criteria related to our customers 
+            behavior patterns. By doing so, we can better allocate our marketing 
+            investments, ensuring that they are targeted and more likely to yield positive results.
+        </p>
+        <div class="pics">
+            <img src="pic/13.png" class="pics13">
+            <img src="pic/14.png" class="pics14">
+        </div>
+        <p id="chart2">
+            We can observe that nearly all customers shop in-store, yet many do not use the catalog. 
+            This presents an opportunity to improve either by revising the catalog content or increasing 
+            its distribution to a broader audience. Additionally, the store's website plays a significant 
+            role in driving purchases. We could consider investing more in digital marketing to attract more 
+            customers, especially in today's increasingly digital era.
+        </p>
+        <div class="pics">
+            <img src="pic/15.png" class="pics13">
+            <img src="pic/16.png" class="pics14">
+        </div>
+        <p id="chart3">
+            We can observe that the vast majority of customers shop in-store, although many do not use the catalog. 
+            This presents an opportunity for improvement by either revising the catalog content or distributing it to a wider audience. <br>
+            Additionally, the store's website plays a significant role in driving purchases. We could focus on increasing digital marketing efforts to attract more customers, especially considering our current era, which is becoming increasingly digital.
+        </p>
+    </section>
+
+    <section class="age" id="age">
+        <h2 id="agecorr-h2">Age and correlation</h2>
+        <div class="pics">
+            <img src="pic/17.png" class="pics17">
+        </div>
+
+        <p id="agecorr">We observe that most customers are between 30 and 70 years old, which can be identified as adults, parents, or even grandparents. <br>
+            The graph shows the correlation between customer age and the number of accepted advertising campaigns (`AcceptedCmpOverall`). Each point represents a customer, with age on the x-axis and the number of accepted campaigns on the y-axis. <br>
+
+            It appears that campaign acceptance is not strongly influenced by age. The acceptance values are spread across all age groups without a clear trend. This suggests that there is no obvious relationship between age and the likelihood of accepting advertising campaigns, indicating that a marketing strategy targeting based solely on age would not be optimal. Instead, it would be better to design campaigns that appeal to a broad audience to maximize reach.</p>
+    </section>
+
+    <!-------------------INTERP------------------>
+    <section class="interp" id="interp">
+        <h2 id="interp-h2"> Interpretation </h2>
+        <p id="interp1">
+            In conclusion, our analysis reveals important insights into customer behavior and the effectiveness of marketing campaigns. Although we initially hypothesized that factors like age might play a crucial role in campaign acceptance, the data shows otherwise. The correlation analysis suggests no clear relationship between age and campaign acceptance, indicating that targeted age-specific marketing may not be effective. </p>
+        <p id="interp2">Instead, our findings highlight the importance of a broad, inclusive marketing approach. The correlation between income and total spending suggests that customers with higher incomes tend to spend more across all categories, emphasizing the need for targeted offers based on purchasing power rather than demographic characteristics such as age.</p>
+        <p id="interp3">Moreover, the variable selection process and Ridge regression model helped refine the predictive power by focusing on the most impactful factors, thereby improving the model's robustness and interpretability. The statistical tests indicate that our model meets the assumptions necessary for reliable analysis, providing confidence in the results.</p>
+        <p id="interp4">
+            In terms of actionable strategies, improving catalog usage and investing in digital marketing channels appear to be promising areas. The store's website has proven to be a significant driver of purchases, suggesting that enhancing our digital marketing efforts could attract more customers, particularly in today's digital landscape.
+        </p>
+        <p id="interp5">Ultimately, our goal should be to identify the key behavioral criteria that can guide marketing investment, ensuring that campaigns are both efficient and effective, maximizing response rates and improving return on investment.</p>
+
+    </section>
+
+    <!-------------------RECOM------------------>
+    <section class="recom" id="recom">
+        <h2 id="recom-h2"> Recommendation </h2>
+        <p id="recomtext">
+            First, a detailed customer segmentation analysis should be conducted to design more targeted campaigns for different groups. Additionally, further behavioral analysis could help identify motivations behind purchasing decisions, providing more refined targeting criteria. A/B testing of different campaign versions would allow us to determine the most effective approaches, while incorporating additional data sources, such as social media engagement or geographic data, could improve predictive accuracy. <br>
+            Analyzing customer feedback, such as reviews or survey responses, through sentiment analysis can guide improvements. Cross-channel analysis is also recommended to understand the interaction between marketing channels and optimize resource allocation. A longitudinal study would help track customer behavior over time, anticipating trends and maintaining campaign relevance. Finally, experimenting with catalog content and expanding digital marketing would help increase engagement across different customer segments. </p>
+    </section>
+
+    <!-------------------LEARNING------------------>
+    <section class="learning" id="learning">
+        <h2 id="learn-h2"> Personal Learnings </h2>
+        <p id="learn1">
+            Through my studies, I have delved into various statistical principles, such as regression analysis, correlation, and hypothesis testing. This foundation has enabled me to identify patterns and relationships within data sets, which is particularly important in marketing. For instance, knowing how to interpret the significance of p-values and R² values helps assess the effectiveness of marketing campaigns and informs decision-making processes. </p>
+        <p id="learn2">Additionally, I have learned to apply these statistical concepts in real-world scenarios, enhancing my ability to develop predictive models that optimize marketing strategies. This includes understanding customer behavior, segmenting audiences, and predicting campaign success rates. By leveraging statistical techniques, I can analyze complex data more effectively, allowing for informed decisions that drive better marketing outcomes. </p>
+        <p id="learn3">Overall, this personal learning journey has equipped me with the necessary skills to analyze marketing data critically, leading to more effective strategies and improved return on investment.</p>
+    </section>
+
+
+
+<script src="marketing.js"></script> 
+
+</body>
+
+
+</html>
