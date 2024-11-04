@@ -1,0 +1,192 @@
+/* ---------------- ROOT VARIABLES ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yeseva+One&display=swap');
+
+
+:root {
+    --color-primary: #ffbfc5;
+    --color-second:#97d4f4;
+    --color-dark: #754226;
+    --color-dark2:rgb(124, 95, 80);
+    --color-light:#FCF3F2;
+    --color-light-variant:#f9e7ea;
+    --color-primary-variant:#F2A0B9;
+    --color-primary-light: #fad4d8;
+    --color-second-variant:#b187bf;
+    --color-black:black;
+    --color-white: #fff;
+    --color-card1:#f19cc1;
+    --color-card2:#c8a3d4;
+    --color-card2-variant:#deb9ea;
+    --color-head:rgb(250, 212, 216,0.7);
+    --typing:#FCF1F1;
+    --filter:#fedee7e9;
+    --background-dark:#fed3de;
+    --tag-web:rgba(182, 218, 252, 0.7);
+    --tag-data:rgba(179, 225, 198, 0.867);
+
+    --card-border-radius: 2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow:0 1.5rem 2rem #f5e0da;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background:var(--background-dark);
+    height:auto;
+    display: flex;
+}
+
+h2 {
+    font-family:"Source Sans 3";
+    font-size: 4rem;
+    color: var(--color-primary-variant);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: 'Yeseva One', serif;
+    font-style: normal;
+    color:var(--color-dark);
+}
+
+h4{
+    font-family:"Source Sans 3";
+    font-weight: 700;
+    font-size: 1.3rem;
+    color:black;
+}
+
+p{
+    font-family:"Source Sans 3";
+    font-weight: 500;
+    font-size: 1.15rem;
+    color:black;   
+}
+/*---------SIDEBAR----------*/
+
+.sidebar {
+    width: 200px;
+    background-color: var(--color-light-variant);
+    padding: 15px;
+}
+
+.sidebar h2 {
+    margin: 0 0 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 1rem;
+    cursor: pointer;
+    font-family:"Source Sans 3";
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: normal;
+    color:var(--color-dark);
+}
+
+.sidebar li:hover {
+    background-color:var(--color-card2-variant);
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/*TABLEAU*/
+
+.container {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.table {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.row, .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.row:hover {
+    background-color: #ebebeb;
+}
+
+.header {
+    background-color: var(--color-card2);
+    font-weight: bold;
+    cursor: default;
+}
+
+.accordion-content {
+    display: none;
+    background-color: #eef6ff;
+    padding: 15px;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+    flex-basis: 25%; /* Chaque colonne occupe 25% de la largeur */
+}
+
+.col-1 {
+    flex-basis: 40%; /* Exemple pour un nom de projet plus long */
+}
+
+.col-2 {
+    flex-basis: 20%; /* Date */
+}
+
+.col-3 {
+    flex-basis: 20%; /* Outils techniques */
+}
+
+.col-4 {
+    flex-basis: 20%; 
+}
