@@ -1,0 +1,248 @@
+<!--starter-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "employee.css"> <!--css est la référence de code pour le front-->
+    <title>Decoding Employee Turnover</title> <!--choix du titre-->
+
+<!--Icon fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+    <!-------------------HEAD------------------>
+<header class="header">
+    <a href="#" class="logo">Bellinna</a>
+    <p>Decoding Employee Turnover<p>
+    <button class="home">
+        <a href="/../index.html" style="text-decoration: none; color: inherit;">Home</a>
+    </button>
+
+</header>
+
+    <!-------------------SIDEBAR------------------>
+
+<div class="sidebar">
+    <nav class="nav">
+        <a href="#objective"><div class="element"><img src="../icon/Objetive.png" alt=""></div></a>
+        <a href="#source"><div class="element"><img src="../icon/source.png" alt=""></div></a>
+        <a href="#prep"><div class="element"><img src="../icon/prep.png" alt=""></a></div>
+        <a href="#chart"><div class="element"><img src="../icon/chart.png" alt=""></a></div>
+        <a href="#interp"><div class="element"><img src="../icon/interpretation.png" alt=""></div></a>
+        <a href="#summary"><div class="element"><img src="../icon/summary.png" alt=""></a></div>
+        <a href="#recom"><div class="element"><img src="../icon/recommendation.png" alt=""></a></div>
+        <a href="#learning"><div class="element"><img src="../icon/learning.png" alt=""></a></div>
+    </nav>
+</div>
+
+    <!-------------------intro------------------>
+    <section class="intro">
+        <div class="container">
+            <div class="text">
+                <p id="intro1">In an ever-evolving professional landscape, human resource management plays a crucial role in an organization's success. One of the major concerns for businesses is employee turnover, which can significantly impact productivity, operational costs, and team engagement.
+                </p>
+                <p id="intro2">This project aims to analyze employee data to identify the factors influencing attrition and job satisfaction. By examining trends and correlations within the data, we hope to provide actionable recommendations to improve talent retention and foster a positive work environment.
+                </p>
+
+            </div>
+            <img src="pic/1.png" alt="">
+        </div>
+        <div class="down">
+            <button class="Btn">
+                <svg class="svgIcon" viewBox="0 0 496 512" height="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                <span class="text">Github</span>
+              </button>
+              <div class="card">
+                <span class="title">Skill</span>
+                <div class="card__tags">
+                  <ul class="tag">
+                    <li class="tag__name">Python</li>
+                    <li class="tag__name">Data Visualization</li>
+                    <li class="tag__name">Predictive modeling</li>
+                    <li class="tag__name">Descriptive statistics</li>
+                    <li class="tag__name">Pandas</li>
+                    <li class="tag__name">Machine Learning</li> 
+                  </ul>
+                </div>
+              </div>
+        
+        </div>
+        <div class="lang">
+            <button onclick="changeLanguage('fr')">Français</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        
+    </section>
+
+
+    <!-------------------OBJECTIVE------------------>
+    <section class="objectif" id="objective">
+        <h1 id="problematic">What are the key factors contributing to employee turnover in our organization?</h1>
+        <div class="all-objec">
+            <div class="text-objec">
+                <h2 id="obj-h2">Ojective</h2>
+                <p id="obj1">
+                    In this analysis, our primary objective is to investigate the factors and characteristics that influence employee departures, with the ultimate goal of enhancing job satisfaction and retention rates. We will focus on the target variable "Leave or Not," which indicates whether an employee has left the company. We will utilize various Python libraries, such as Pandas for data manipulation, Seaborn and Matplotlib for visualization, and Scikit-learn for modeling and evaluation, to conduct a thorough examination of the dataset. By understanding the underlying patterns in these variables, we aim to provide actionable insights that can help improve employee satisfaction and reduce turnover rates.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------SOURCE------------------>
+    <section class="source" id="source">
+        <div class="all-source">
+            <h2 id="dataset-h2">The dataset</h2>
+            <div class="text-source">
+                <div class="text">
+                    <p id="source1">
+                        The data used for this project was sourced
+                        from Kaggle, a well-known platform for datasets
+                        and data science competitions.
+                    </p>
+                    <p id="source2">
+                        Our dataset comprises 4,653 responses and includes both qualitative and quantitative variables. The qualitative variables consist of education level, city of employment, employee gender, and whether the employee has experienced temporary work disruptions. The quantitative variables include the year of hire, salary categorization, age, years of experience, and employee turnover status. 
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="/Employeepython/pic/1.2.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------PREP------------------>
+    <section class="prep" id="prep">
+        <div class="all-prep">
+            <div class="text-prep">
+                <h2 id="dataprep-h2">Data preparation</h2>
+                <div class="text-info">
+                    <p id="prep1">
+                        After analyzing the data, the results indicate that the average age of employees is 29.39 years, ranging from 22 to 41 years old. On average, they joined the company in 2015. Notably, half of the employees have over three years of experience in this specific field. Regarding employee turnover, it is observed that approximately one-third of employees have chosen to leave the company, highlighting a critical aspect of staff retention.
+                    </p>
+                    <img src="pic/2.png">
+                </div>
+                <p id="prep2">
+                    Each quantitative variable has several unique responses.
+                </p>
+                <div class="pic">
+                    <img class = "pic1" src="pic/3.png">
+                    <img src="pic/4.png">
+                </div>
+                <p id="prep2">
+                    The use of df.isnull().sum() reveals that there are no null values present in the dataset. This is an encouraging finding, as it indicates that the data is complete and reliable for analysis. Having no missing values helps to ensure the integrity of statistical models and insights derived from the dataset, allowing for more accurate conclusions and enhancing the overall quality of the analysis.
+                </p>
+            </div>
+
+            <div class="uni-analysis">
+                <h2 id="uni-analysis-h2">Univariate analysis</h2>
+                <img src="pic/5.png">
+                <img src="pic/6.png">
+                <p id="uni-analysis1">
+                    The graph shows that 34.4% of the 4,653 total employees, which reprensent 1,600 employees, have decided to leave the company. This suggests a significant employee turnover rate, which could indicate underlying issues such as job dissatisfaction, better opportunities elsewhere, or company-specific challenges.
+                </p>
+                <img src="pic/7.png">
+                <img src="pic/8.png">
+                <p id="uni-analysis2">The graph illustrates the distribution of employees based on their highest level of education. Approximately 3,500 individuals hold a bachelor’s degree, making up the majority of the workforce. In contrast, around 900 employees have obtained a master’s degree, representing a smaller portion of the population, while only about 250 have earned a doctoral degree, indicating that higher levels of education are less common within the company.</p>
+                <p id="uni-analysis3">This distribution suggests that the workforce is primarily composed of employees with undergraduate qualifications, with a smaller proportion pursuing advanced degrees.</p>
+            </div>
+
+            <div class="details">
+                <div class="encoding">
+                <h2 id="encoding-h2">Label encoding for categorical columns</h2>
+                    <p id="encoding">////  </p>
+                    <img src ="pic/4.png"> 
+                </div>
+
+
+                <div class="corr">
+                    <h2 id="corr-h2">Correlation</h2>
+                    <div class="leftside">
+                        <p id="corr1">//////// 
+                        </p>
+                        <img src ="pic/5.png">
+                    </div>
+                    <div class="rightside">
+                        <p id="corr2">///////</p>
+                        <img src = "pic/6.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------Plurivariate analysis------------------>
+    <section class="chart" id="chart">
+        <h2 id="chart-h2">Plurivariate analysis</h2>
+        <p id="chart1">
+            ///////////
+        </p>
+        <div class="pics">
+            <img src="pic/13.png" class="pics13">
+            <img src="pic/14.png" class="pics14">
+        </div>
+        <p id="chart2">
+            //////////////////
+        </p>
+        <div class="pics">
+            <img src="pic/15.png" class="pics13">
+            <img src="pic/16.png" class="pics14">
+        </div>
+        <p id="chart3">
+            /////////////////
+        </p>
+    </section>
+
+    <section class="sets" id="sets">
+        <h2 id="sets-h2">Divide data into 2 sets</h2>
+        <div class="pics">
+            <img src="pic/17.png" class="pics17">
+        </div>
+
+        <p id="sets">//////////////</p>
+    </section>
+
+    <!-------------------INTERP------------------>
+    <section class="interp" id="interp">
+        <h2 id="interp-h2"> Interpretation </h2>
+        <p id="interp1">
+         ////////////</p>
+        <p id="interp2">///////</p>
+        <p id="interp3">////////////</p>
+        <p id="interp4">
+            /////////////
+        </p>
+        <p id="interp5">//////////////.</p>
+
+    </section>
+
+    <!-------------------RECOM------------------>
+    <section class="recom" id="recom">
+        <h2 id="recom-h2"> Recommendation </h2>
+        <p id="recomtext">
+            ///////////// </p>
+    </section>
+
+    <!-------------------LEARNING------------------>
+    <section class="learning" id="learning">
+        <h2 id="learn-h2"> Personal Learnings </h2>
+        <p id="learn1">
+            ////////////////</p>
+        <p id="learn2">... </p>
+        <p id="learn3">....</p>
+    </section>
+
+
+
+<script src="employee.js"></script> 
+
+</body>
+
+
+</html>
