@@ -30,9 +30,9 @@ document.getElementById("image-switch").addEventListener("change", function() {
     // Attendez que la transition soit terminée avant de changer l'image
     setTimeout(function() {
         if (document.getElementById("image-switch").checked) {
-            img.src = "/../projet/pomonight.png"; // Lien vers la nouvelle image
+            img.src = "../projet/pomonight.png"; // Lien vers la nouvelle image
         } else {
-            img.src = "/../projet/pomoday.png"; // Lien vers l'image originale
+            img.src = "../projet/pomoday.png"; // Lien vers l'image originale
         }
 
         // Réappliquez l'opacité une fois l'image changée
