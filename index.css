@@ -53,7 +53,7 @@ html{
 
 body {
     background: linear-gradient(to bottom, var(--color-light),var(--background-dark));
-    height:560vh;
+    height:430vh;
 }
 
 h2 {
@@ -328,7 +328,7 @@ h2 {
 
 
 section {
-    min-height: 100vh;
+    min-height: 65vh;
     padding: 5rem 9% 5rem;
     justify-content: center;
     align-items: center;
@@ -339,11 +339,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
     gap: 8rem;
 }
 
 .home .home-content h1{
-    margin-top: 5rem;
+    margin-top: 7rem;
     font-size: 6rem;
     font-weight: 500;
     line-height: 1.3;
@@ -629,13 +630,7 @@ span{
     justify-content: center;
 }
 
-/*
-.skills-wrapper {
-    box-shadow: 0 0 15rem 1rem var(--color-primary-variant);
-    border-radius: var(--border-radius-1);
-    overflow: hidden;
-} 
-*/
+
 
 .skills {
     width: 100%;
@@ -691,6 +686,7 @@ span{
         transform: translateX(-60%);
     }
 }
+
 
 /*-------------PORTFOLIO----------*/
 .project {
