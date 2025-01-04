@@ -78,14 +78,14 @@ h3{
 h4{
     font-family:"Source Sans 3";
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color:black;
 }
 
 p{
     font-family:"Source Sans 3";
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color:black;   
 }
 /*---------SIDEBAR----------*/
@@ -97,7 +97,7 @@ p{
 }
 
 .sidebar h2 {
-    margin: 0 0 10px;
+    margin: 0 0 100px;
 }
 
 .sidebar ul {

@@ -50,12 +50,12 @@ section {
     gap:1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-family:"Source Sans 3";
     line-height: 2.5rem;
     padding-bottom: 1.5rem;
@@ -118,7 +118,7 @@ h1 {
 }
 
 .header p{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
     font-family:"Source Sans 3";
     color:var(--color-dark);
@@ -130,7 +130,7 @@ h1 {
     cursor: pointer;
     position: relative;
     padding: 5px 14px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: 34px;
@@ -171,10 +171,10 @@ h1 {
   /*-------------------------SIDE BAR----------------*/
   .sidebar {
     position: fixed;
-    top: 13rem;
-    left: 145rem;
-    width: 55px;
-    height: 31rem;
+    top: 20rem;
+    left: 182rem;
+    width: 65px;
+    height: 38rem;
     background-color: transparent;
     padding: 0.8rem;
     border: 2px solid var(--color-primary);
@@ -192,8 +192,8 @@ h1 {
 }
 
 .sidebar .element {
-    width: 35px;
-    height:35px;
+    width: 45px;
+    height:45px;
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 0.3s ease;
@@ -203,7 +203,7 @@ h1 {
 
 }
 .sidebar .element img{
-    width: 23px;
+    width: 35px;
 
 }
 
@@ -372,7 +372,12 @@ h1 {
 }
 
 .prep .left {
-  max-width : 55rem;
+  max-width : 65rem;
+  margin-left: 10em;
+}
+.prep .right {
+  max-width : 65rem;
+  margin-left: 6rem;
 }
 
 .prep .details p {
