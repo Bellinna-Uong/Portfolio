@@ -97,7 +97,7 @@ p{
 }
 
 .sidebar h2 {
-    margin: 0 0 100px;
+    margin: 0 0 10px;
 }
 
 .sidebar ul {
@@ -110,7 +110,7 @@ p{
     cursor: pointer;
     font-family:"Source Sans 3";
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     color:var(--color-dark);
 }
