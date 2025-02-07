@@ -78,14 +78,14 @@ h3{
 h4{
     font-family:"Source Sans 3";
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color:black;
 }
 
 p{
     font-family:"Source Sans 3";
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color:black;   
 }
 /*---------SIDEBAR----------*/
@@ -110,7 +110,7 @@ p{
     cursor: pointer;
     font-family:"Source Sans 3";
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     color:var(--color-dark);
 }

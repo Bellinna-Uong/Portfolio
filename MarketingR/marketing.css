@@ -50,12 +50,12 @@ section {
     gap:1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family:"Source Sans 3";
     line-height: 2.5rem;
     padding-bottom: 1.5rem;
@@ -117,7 +117,7 @@ h1 {
 }
 
 .header p{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
     font-family:"Source Sans 3";
     color:var(--color-dark);
@@ -129,7 +129,7 @@ h1 {
     cursor: pointer;
     position: relative;
     padding: 5px 14px;
-    font-size: 12px;
+    font-size: 18px;
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: 34px;
@@ -170,10 +170,10 @@ h1 {
   /*-------------------------SIDE BAR----------------*/
   .sidebar {
     position: fixed;
-    top: 13rem;
-    left: 145rem;
-    width: 55px;
-    height: 31rem;
+    top: 20rem;
+    left: 182rem;
+    width: 65px;
+    height: 38rem;
     background-color: transparent;
     padding: 0.8rem;
     border: 2px solid var(--color-primary);
@@ -191,8 +191,8 @@ h1 {
 }
 
 .sidebar .element {
-    width: 35px;
-    height:35px;
+    width: 45px;
+    height:45px;
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 0.3s ease;
@@ -202,7 +202,7 @@ h1 {
 
 }
 .sidebar .element img{
-    width: 23px;
+    width: 35px;
 
 }
 
@@ -212,10 +212,11 @@ h1 {
     transform:scale(1.15);
 }
   
+  
 /*-------------Intro--------------*/
 
 .intro {
-    margin-top: 10rem;
+    margin-top: 11rem;
 }
 
 .container {
@@ -226,7 +227,7 @@ h1 {
 }
 
 .container img {
-    width: 50rem;
+    width: 59rem;
 }
 
 .intro .Btn {
@@ -380,7 +381,7 @@ h1 {
   }
   
   .prep .details .problem img {
-    width: 65rem;
+    width: 6rem;
     max-width: 100%; 
     height: auto; 
   }
@@ -388,12 +389,17 @@ h1 {
 .details .corr {
   display: flex;
   margin-top: 4rem;
-  gap:5rem;
+  gap:9rem;
+}
+
+.details .corr .leftside {
+  margin-top: 0.8rem;
 }
 
 .details .corr .leftside img {
   width: 50rem;
-  margin-top: 15rem;
+  margin-top: 12rem;
+
 }
 
 .details .corr .rightside {
@@ -420,7 +426,7 @@ h1 {
   justify-content: center;
 }
 .model img {
-  width : 50%;
+  width : 35%;
 }
 
 .model .coeffpng {
@@ -436,7 +442,7 @@ h1 {
 }
 
 .test img {
-  width:60%;
+  width:50%;
 }
 
 /*--------------CHART---------*/
